@@ -1,3 +1,6 @@
+package kata.gildedrose.itemstransformers;
+
+import kata.gildedrose.legacy.Item;
 
 public class SulfurasMutator implements ItemMutator {
 

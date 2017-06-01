@@ -1,12 +1,13 @@
+package kata.gildedrose.legacy;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class LegacyGildedRose {
+public class GildedRose {
 
 	private List<Item> items = null;
 	
-	public LegacyGildedRose(List<Item> items) {
+	public GildedRose(List<Item> items) {
 		this.items = items;
 	}
 	

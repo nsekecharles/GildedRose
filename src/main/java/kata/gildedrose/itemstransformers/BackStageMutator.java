@@ -1,18 +1,21 @@
+package kata.gildedrose.itemstransformers;
+
+import kata.gildedrose.legacy.Item;
 
 public class BackStageMutator implements ItemMutator {
 
 	@Override
 	public void mutate(Item item) {
-		updateSellIn(item);
+		updateSellInOf(item);
 		if (item.getSellIn() < 0) {
-        	setQualityToZero(item);
+        	setQualityToZeroFor(item);
         } else {
-        	increaseQualityOfItemAtIndex(item);
+        	increaseQualityOf(item);
             if (item.getSellIn() + 1 < 11) {
-            	increaseQualityOfItemAtIndex(item);
+            	increaseQualityOf(item);
             }
             if (item.getSellIn() + 1 < 6) {
-            	increaseQualityOfItemAtIndex(item);
+            	increaseQualityOf(item);
             }
         }
 	}

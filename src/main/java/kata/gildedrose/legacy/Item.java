@@ -1,3 +1,4 @@
+package kata.gildedrose.legacy;
 
 public class Item {
     public String name;
